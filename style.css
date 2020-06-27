@@ -1,0 +1,38 @@
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Shadows+Into+Light&display=swap");
+
+body, #winner {
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+  color: #084C61;
+  background-color: #323031 !important;
+  margin: 2em;
+} 
+
+#intro {
+  font-family: "Shadows Into Light", cursive;
+  font-style: bold;
+  text-align: center;
+  color: #177E89;
+}
+
+.row {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: #FFC857;
+  border: solid 2px #DB3A34;
+  text-align: center;
+}
+
+.col-sm-4 {
+  border-right: solid 2px #DB3A34;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+#winner {
+  color: #FFC857 !important;
+  text-shadow: 5px 5px #084C61;
+}
