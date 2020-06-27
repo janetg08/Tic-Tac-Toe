@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="intro">
+        <h1 style="margin-bottom: 20px">Welcome to the Game!</h1>
+        <h3 style="margin-bottom: 20px">
+          This is your standard game of two-player tic-tac-toe. <br />
+          The game will keep track of turns and determine if there's a winner.
+          <br />
+          To make your initial move, simply click on the box! O starts!
+        </h3>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+      <div class="card">
+        <div class="row" style="border-bottom: none;">
+          <div class="col-sm-4">
+            <div type="button" class="btn btn-lg space" id="button1">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div type="button" class="btn btn-lg space" id="button2">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-sm-4" style="border-right: none;">
+            <div type="button" class="btn btn-lg space" id="button3">
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="border-bottom: none;">
+          <div class="col-sm-4">
+            <div type="button" class="btn btn-lg space" id="button4">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div type="button" class="btn btn-lg space" id="button5">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-sm-4" style="border-right: none;">
+            <div type="button" class="btn btn-lg space" id="button6">
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div type="button" class="btn btn-lg space" id="button7">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div type="button" class="btn btn-lg space" id="button8">
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-sm-4" style="border-right: none;">
+            <div type="button" class="btn btn-lg space" id="button9">
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card hidden" id="winner"></div>
+    </div>
+  </body>
+</html>
