@@ -201,6 +201,7 @@ const checkWin = (e) => {
     winner.classList.remove("hidden");
     winner.innerHTML = `<h3> And the winner is...Player ${button7.innerText}! Refresh the page to play again! </h3>`
   } else if (button1.innerText == button4.innerText && button1.innerText == button7.innerText && button1.innerText != "") {
+    window.alert(winStatement);
     winner.classList.remove("hidden");
     winner.innerHTML = `<h3> And the winner is...Player ${button1.innerText}! Refresh the page to play again! </h3>`
   } else if (button2.innerText == button5.innerText && button2.innerText == button8.innerText && button2.innerText != "") {
