@@ -2,8 +2,8 @@ console.log("Script Running");
 
 let playerIcon = "O";
 let turnCount = 0;
-let winStatement;
-let drawStatement;
+let winStatement = "We have a winner!";
+let drawStatement = "We have a draw."
 let button1 = document.querySelector("#button1");
 let button2 = document.querySelector("#button2");
 let button3 = document.querySelector("#button3");
@@ -189,50 +189,40 @@ button9.addEventListener("click", e => {
 const checkWin = (e) => {
   console.log(turnCount);
   if (button1.innerText == button2.innerText && button1.innerText == button3.innerText && button1.innerText != "") {
-    winStatement = `Congrats! Player ${button1.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button1.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button1.innerText}! Refresh the page to play again! </h3>`
   } else if (button4.innerText == button5.innerText && button4.innerText == button6.innerText && button4.innerText != "") {
-    winStatement = `Congrats! Player ${button4.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button4.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button4.innerText}! Refresh the page to play again! </h3>`
   } else if (button7.innerText == button8.innerText && button7.innerText == button9.innerText && button7.innerText != "") {
-    winStatement = `Congrats! Player ${button7.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button7.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button7.innerText}! Refresh the page to play again! </h3>`
   } else if (button1.innerText == button4.innerText && button1.innerText == button7.innerText && button1.innerText != "") {
-    winStatement = `Congrats! Player ${button1.innerText} wins!`
-    window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button1.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button1.innerText}! Refresh the page to play again! </h3>`
   } else if (button2.innerText == button5.innerText && button2.innerText == button8.innerText && button2.innerText != "") {
-    winStatement = `Congrats! Player ${button2.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button2.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button2.innerText}! Refresh the page to play again! </h3>`
   } else if (button3.innerText == button6.innerText && button3.innerText == button9.innerText && button3.innerText != "") {
-    winStatement = `Congrats! Player ${button3.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button3.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button3.innerText}! Refresh the page to play again! </h3>`
   } else if (button1.innerText == button5.innerText && button1.innerText == button9.innerText && button1.innerText != "") {
-    winStatement = `Congrats! Player ${button1.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button1.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner...is Player ${button1.innerText}! Refresh the page to play again! </h3>`
   } else if (button3.innerText == button5.innerText && button3.innerText == button7.innerText && button3.innerText != "") {
-    winStatement = `Congrats! Player ${button3.innerText} wins!`
     window.alert(winStatement)
     winner.classList.remove("hidden");
-    winner.innerHTML = `<h3> And the winner is Player ${button3.innerText}...Refresh the page to play again! </h3>`
+    winner.innerHTML = `<h3> And the winner is...Player ${button3.innerText}! Refresh the page to play again! </h3>`
   } else if (turnCount == 9) {
-    drawStatement = "No winner this time around...Refresh the page to play again!"
     window.alert(drawStatement)
     winner.classList.remove("hidden")
-    winner.innerHTML = `<h3> ${drawStatement} </h3>`
+    winner.innerHTML = `<h3> ${drawStatement} Refresh the page to play again! </h3>`
   } else {
     console.log("No winner yet...keep playing!")
   }
